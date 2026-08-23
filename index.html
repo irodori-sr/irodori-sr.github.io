@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>障害福祉事業所 運営健康診断</title>
+  <meta name="description" content="処遇改善加算、給与計算、社会保険手続き、労務管理、助成金など、障害福祉事業所の運営状態を約3分で確認できる無料診断です。">
+  <meta property="og:title" content="障害福祉事業所 運営健康診断">
+  <meta property="og:description" content="事業所運営の見落としやすいポイントを約3分でチェック。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-operations-check.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="サイト上部">
+    <a class="brand" href="#top" aria-label="障害福祉事業所 運営健康診断 トップへ">
+      <span class="brand-mark" aria-hidden="true">✓</span>
+      <span>運営健康診断</span>
+    </a>
+    <nav class="header-nav" aria-label="ページ内メニュー">
+      <a href="#check">診断</a>
+      <a href="#support">支援内容</a>
+      <a href="#contact">相談</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero-operations-check.png" alt="">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">無料・約3分・スマホ対応</p>
+        <h1>社長が安心して、利用者支援に集中できる事業所へ。</h1>
+        <p class="hero-lead">
+          処遇改善加算、給与計算、社会保険、労務管理、助成金。
+          「あとで確認しよう」が積み重なる前に、事業所運営の状態を簡単にチェックできます。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#check">診断をはじめる</a>
+          <a class="button secondary" href="#mini-lp">A4ミニLP用の文言を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="section-inner two-column">
+        <div>
+          <p class="eyebrow">こんな事業所に</p>
+          <h2>人手が足りない中でも、運営の不安は後回しにできません。</h2>
+        </div>
+        <div class="intro-list" aria-label="確認できるテーマ">
+          <span>処遇改善加算</span>
+          <span>給与計算</span>
+          <span>社会保険手続き</span>
+          <span>労務管理</span>
+          <span>助成金</span>
+          <span>指定申請連携</span>
+          <span>行政書士連携</span>
+          <span>弁護士連携</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section check-section" id="check">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">10問診断</p>
+          <h2>あなたの事業所は大丈夫ですか？</h2>
+          <p>「はい」が多いほど安心です。迷う項目は「いいえ」で確認してみてください。</p>
+        </div>
+
+        <form class="diagnosis" id="diagnosisForm">
+          <fieldset class="question" data-category="処遇改善加算" data-advice="処遇改善加算の分配根拠、職員への説明資料、実績報告まで一連で確認しておくと安心です。">
+            <legend>処遇改善加算の分配方法を、職員や第三者に説明できますか？</legend>
+            <label><input type="radio" name="q1" value="yes" required> はい</label>
+            <label><input type="radio" name="q1" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="給与計算" data-advice="給与計算は締め日、控除、残業、加算配分の確認者を分けるとミスを減らせます。">
+            <legend>給与計算は毎月ダブルチェックしていますか？</legend>
+            <label><input type="radio" name="q2" value="yes" required> はい</label>
+            <label><input type="radio" name="q2" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="勤怠管理" data-advice="手作業の勤怠集計は残業代や有休管理のズレにつながりやすいため、集計方法の見直しが有効です。">
+            <legend>勤怠集計や残業時間を毎月確認できていますか？</legend>
+            <label><input type="radio" name="q3" value="yes" required> はい</label>
+            <label><input type="radio" name="q3" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="社会保険手続き" data-advice="入退社、扶養、月額変更、算定基礎などの期限管理を見える化しておくと手続き漏れを防げます。">
+            <legend>入退社や扶養変更など、社会保険手続きの期限管理はできていますか？</legend>
+            <label><input type="radio" name="q4" value="yes" required> はい</label>
+            <label><input type="radio" name="q4" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="就業規則・雇用契約" data-advice="就業規則、雇用契約書、賃金規程が実際の勤務形態と合っているか定期的な点検が必要です。">
+            <legend>就業規則や雇用契約書を、直近の運用に合わせて見直していますか？</legend>
+            <label><input type="radio" name="q5" value="yes" required> はい</label>
+            <label><input type="radio" name="q5" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="労務相談" data-advice="職員対応は初動が大切です。相談先と記録方法を決めておくと、トラブル化を防ぎやすくなります。">
+            <legend>職員対応や労務トラブルを相談できる相手が決まっていますか？</legend>
+            <label><input type="radio" name="q6" value="yes" required> はい</label>
+            <label><input type="radio" name="q6" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="助成金" data-advice="採用、定着、研修、処遇改善に関係する助成金は、要件に合うかだけでも先に確認しておく価値があります。">
+            <legend>使えそうな助成金を定期的に確認していますか？</legend>
+            <label><input type="radio" name="q7" value="yes" required> はい</label>
+            <label><input type="radio" name="q7" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="実地指導・監査準備" data-advice="実地指導や監査に備えて、労務書類、給与資料、加算資料の保管場所と更新担当を決めておきましょう。">
+            <legend>実地指導や監査で必要になりそうな労務書類を整理できていますか？</legend>
+            <label><input type="radio" name="q8" value="yes" required> はい</label>
+            <label><input type="radio" name="q8" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="指定申請・変更届" data-advice="指定申請や変更届は行政書士との連携が有効です。人員配置や運営体制の変更時に早めの確認が必要です。">
+            <legend>指定申請や変更届が必要な場面で、行政書士などの相談先がありますか？</legend>
+            <label><input type="radio" name="q9" value="yes" required> はい</label>
+            <label><input type="radio" name="q9" value="no"> いいえ</label>
+          </fieldset>
+
+          <fieldset class="question" data-category="外部専門家との連携" data-advice="社労士、行政書士、弁護士の役割を整理しておくと、労務・指定・法務の相談がスムーズになります。">
+            <legend>社労士、行政書士、弁護士と必要に応じて連携できる体制がありますか？</legend>
+            <label><input type="radio" name="q10" value="yes" required> はい</label>
+            <label><input type="radio" name="q10" value="no"> いいえ</label>
+          </fieldset>
+
+          <button class="button primary submit-button" type="submit">診断結果を見る</button>
+        </form>
+
+        <section class="result-panel" id="result" aria-live="polite" hidden>
+          <p class="eyebrow">診断結果</p>
+          <h3 id="resultTitle"></h3>
+          <div class="score-meter" aria-hidden="true">
+            <span id="scoreBar"></span>
+          </div>
+          <p id="resultText"></p>
+          <div id="resultAdvice" class="advice-list"></div>
+          <div class="result-actions">
+            <a class="button primary" href="#contact">相談してみる</a>
+            <button class="button secondary" type="button" id="retryButton">もう一度診断する</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section support" id="support">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">お手伝いできること</p>
+          <h2>事業所運営の「気になる」を、必要な専門家につなぎます。</h2>
+        </div>
+        <div class="support-grid">
+          <article>
+            <h3>処遇改善加算</h3>
+            <p>分配方法、説明資料、実績報告、給与計算との整合性を確認します。</p>
+          </article>
+          <article>
+            <h3>給与計算・勤怠</h3>
+            <p>毎月の給与計算、残業、有休、勤怠集計のミスを減らす体制を整えます。</p>
+          </article>
+          <article>
+            <h3>社会保険・労務管理</h3>
+            <p>入退社手続き、雇用契約、就業規則、職員対応の相談先になります。</p>
+          </article>
+          <article>
+            <h3>助成金・専門家連携</h3>
+            <p>助成金の確認、指定申請の行政書士連携、法務相談の弁護士連携まで支えます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mini-lp" id="mini-lp">
+      <div class="section-inner two-column">
+        <div>
+          <p class="eyebrow">A4両面ミニLP・営業メール用</p>
+          <h2>そのまま流用しやすい短い文言</h2>
+          <p>印刷物、名刺裏、営業メール、比較ビズ、ココナラの案内文に使いやすい形です。</p>
+        </div>
+        <div class="copy-box">
+          <h3>見出し</h3>
+          <p>社長が安心して、利用者支援に集中できる事業所へ。</p>
+          <h3>本文</h3>
+          <p>処遇改善加算、給与計算、労務管理、社会保険、助成金。「あとでやろう」が一番危険です。まずは約3分の運営健康診断で、今の状態を確認してみませんか。</p>
+          <h3>メール件名</h3>
+          <p>処遇改善加算、本当に今の運用で大丈夫ですか？</p>
+          <h3>名刺裏</h3>
+          <p>障害福祉事業所 運営健康診断 / 無料 / 約3分 / QRコードから確認</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-inner contact-panel">
+        <div>
+          <p class="eyebrow">無料相談</p>
+          <h2>「これ相談していいのかな？」という内容からどうぞ。</h2>
+          <p>
+            診断結果で気になる項目があれば、まずは状況の整理からご相談ください。
+            必要に応じて、行政書士・弁護士とも連携してサポートします。
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" id="mailLink" href="mailto:?subject=%E9%81%8B%E5%96%B6%E5%81%A5%E5%BA%B7%E8%A8%BA%E6%96%AD%E3%81%AE%E7%9B%B8%E8%AB%87&body=%E4%BA%8B%E6%A5%AD%E6%89%80%E5%90%8D%EF%BC%9A%0A%E3%81%94%E6%8B%85%E5%BD%93%E8%80%85%E5%90%8D%EF%BC%9A%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%EF%BC%9A%0A%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84%E5%86%85%E5%AE%B9%EF%BC%9A%0A">メールで相談する</a>
+          <p class="contact-note">公開前に、リンク先メールアドレスを設定してください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>supported by つちだ社会保険労務士事務所</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
