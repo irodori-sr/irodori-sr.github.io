@@ -13,7 +13,7 @@ GitHub Pagesで無料公開できる、静的なLP兼診断サイトです。
 ## 連絡先
 
 ```text
-tsuchida.sr.202011@gmail.com
+irodori.sr.office@gmail.com
 ```
 
 ## GitHub Pagesで無料公開する手順
@@ -136,17 +136,17 @@ supported by いろどり社労士オフィス
 診断ページを開くのがご不安な場合は、無理に開いていただかなくて構いません。
 空メールでも結構ですので、一度お気軽にご連絡ください。
 
-メール：tsuchida.sr.202011@gmail.com
+メール：irodori.sr.office@gmail.com
 
 参考までに、簡単なチェック用ページもご用意しています。
 
 ▼障害福祉事業所 運営健康診断
-公開URLを入れる
+https://irodori-sr.github.io/
 
 ────────────────
 障害福祉事業所 運営相談窓口
 いろどり社労士オフィス
-メール：tsuchida.sr.202011@gmail.com
+メール：irodori.sr.office@gmail.com
 ```
 
 短縮版:
@@ -168,10 +168,10 @@ supported by いろどり社労士オフィス
 診断ページを開くのがご不安な場合は、無理に開いていただかなくて構いません。
 空メールでも大丈夫ですので、一度お気軽にご連絡ください。
 
-メール：tsuchida.sr.202011@gmail.com
+メール：irodori.sr.office@gmail.com
 
 ▼障害福祉事業所 運営健康診断
-公開URLを入れる
+https://irodori-sr.github.io/
 
 ────────────────
 障害福祉事業所 運営相談窓口
