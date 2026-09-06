@@ -9,7 +9,7 @@
   <meta property="og:description" content="事業所運営の見落としやすいポイントを約3分でチェック。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/hero-operations-check.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260906-answers">
 </head>
 <body>
   <header class="site-header" aria-label="サイト上部">
@@ -33,7 +33,11 @@
       </div>
       <div class="hero-content">
         <p class="eyebrow">障害福祉事業所向け 無料チェック</p>
-        <h1>社長が安心して、利用者支援に集中できる事業所へ。</h1>
+        <h1>
+          社長が安心して、<br>
+          利用者支援に集中できる<br>
+          事業所へ。
+        </h1>
         <p class="hero-lead">
           処遇改善加算、給与計算、社会保険、労務管理、助成金。
           「あとで確認しよう」が積み重なる前に、事業所運営の状態を簡単にチェックできます。
@@ -70,68 +74,88 @@
         <div class="section-heading">
           <p class="eyebrow">10問診断</p>
           <h2>その運用、正しくできていますか？</h2>
-          <p>「なんとなく大丈夫」ではなく、法律・加算要件・実地指導に耐えられる状態かを確認してみてください。</p>
+          <p>「なんとなく大丈夫」ではなく、法律・加算要件・実地指導に耐えられる状態かを確認できます。</p>
         </div>
 
         <form class="diagnosis" id="diagnosisForm">
           <fieldset class="question" data-category="処遇改善加算" data-advice="処遇改善加算は、分配根拠、職員への周知、賃金改善実績、届出内容の整合性を一連で確認しておく必要があります。">
             <legend>処遇改善加算の配分方法は、要件に沿って正しく運用できていますか？</legend>
-            <label><input type="radio" name="q1" value="yes" required> はい</label>
-            <label><input type="radio" name="q1" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q1" value="yes" required> はい</label>
+              <label><input type="radio" name="q1" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="給与計算" data-advice="給与計算は、最低賃金、割増賃金、控除、処遇改善分の反映にズレがないかを確認することが重要です。">
             <legend>給与計算は、残業代・控除・処遇改善分まで法的に問題ない形で計算できていますか？</legend>
-            <label><input type="radio" name="q2" value="yes" required> はい</label>
-            <label><input type="radio" name="q2" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q2" value="yes" required> はい</label>
+              <label><input type="radio" name="q2" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="勤怠管理" data-advice="勤怠記録は、労働時間、休憩、残業、有休取得の根拠になります。実態と記録がズレていないか点検が必要です。">
             <legend>勤怠記録は、実際の勤務時間とズレなく、労基署に確認されても説明できる状態ですか？</legend>
-            <label><input type="radio" name="q3" value="yes" required> はい</label>
-            <label><input type="radio" name="q3" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q3" value="yes" required> はい</label>
+              <label><input type="radio" name="q3" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="社会保険手続き" data-advice="入退社、扶養、月額変更、算定基礎などは期限や判断を誤ると、後から保険料や手続きの修正が必要になることがあります。">
             <legend>社会保険・雇用保険の加入、喪失、変更手続きは、期限内に正しく行えていますか？</legend>
-            <label><input type="radio" name="q4" value="yes" required> はい</label>
-            <label><input type="radio" name="q4" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q4" value="yes" required> はい</label>
+              <label><input type="radio" name="q4" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="就業規則・雇用契約" data-advice="就業規則、雇用契約書、賃金規程が実際の勤務形態や給与運用と合っていないと、職員対応や監査時のリスクになります。">
             <legend>就業規則・雇用契約書・賃金規程は、実際の運用と矛盾していませんか？</legend>
-            <label><input type="radio" name="q5" value="yes" required> はい</label>
-            <label><input type="radio" name="q5" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q5" value="yes" required> はい</label>
+              <label><input type="radio" name="q5" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="労務相談" data-advice="注意指導、退職、休職、ハラスメント対応は初動と記録が重要です。感覚的な対応だけで進めない体制が必要です。">
             <legend>職員対応や労務トラブルは、法的に問題が出にくい手順で対応できていますか？</legend>
-            <label><input type="radio" name="q6" value="yes" required> はい</label>
-            <label><input type="radio" name="q6" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q6" value="yes" required> はい</label>
+              <label><input type="radio" name="q6" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="助成金" data-advice="助成金は、申請前の労務管理や帳簿、就業規則、賃金台帳の状態が要件に影響することがあります。">
             <legend>助成金を申請できるだけの労務書類・勤怠・賃金台帳の整備はできていますか？</legend>
-            <label><input type="radio" name="q7" value="yes" required> はい</label>
-            <label><input type="radio" name="q7" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q7" value="yes" required> はい</label>
+              <label><input type="radio" name="q7" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="実地指導・監査準備" data-advice="実地指導や監査では、加算資料、雇用契約、勤怠、給与資料、職員配置の根拠を求められることがあります。">
             <legend>実地指導や監査で、加算・人員配置・労務書類の根拠をすぐ示せますか？</legend>
-            <label><input type="radio" name="q8" value="yes" required> はい</label>
-            <label><input type="radio" name="q8" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q8" value="yes" required> はい</label>
+              <label><input type="radio" name="q8" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="指定申請・変更届" data-advice="指定申請や変更届は、事業内容、人員配置、管理者・サービス管理責任者の変更などで必要になる場合があります。">
             <legend>人員配置や運営体制の変更時に、指定基準や変更届の要否を確認できていますか？</legend>
-            <label><input type="radio" name="q9" value="yes" required> はい</label>
-            <label><input type="radio" name="q9" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q9" value="yes" required> はい</label>
+              <label><input type="radio" name="q9" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <fieldset class="question" data-category="外部専門家との連携" data-advice="労務は社労士、指定申請は行政書士、法的紛争は弁護士など、相談先を分けておくと判断が遅れにくくなります。">
             <legend>労務・指定申請・法務の問題を、内容に応じて専門家へ正しく相談できる体制がありますか？</legend>
-            <label><input type="radio" name="q10" value="yes" required> はい</label>
-            <label><input type="radio" name="q10" value="no"> いいえ</label>
+            <div class="answer-options">
+              <label><input type="radio" name="q10" value="yes" required> はい</label>
+              <label><input type="radio" name="q10" value="no"> いいえ</label>
+            </div>
           </fieldset>
 
           <button class="button primary submit-button" type="submit">診断結果を見る</button>
