@@ -1,15 +1,15 @@
 :root {
-  --ink: #1f2a2d;
-  --muted: #5f6f72;
-  --line: #dfe7e5;
-  --paper: #fbfaf7;
+  --ink: #343d36;
+  --muted: #687267;
+  --line: #d9d6c9;
+  --paper: #f7f4ec;
   --white: #ffffff;
-  --teal: #2d7772;
-  --teal-dark: #1d5653;
-  --mint: #dcefeb;
-  --gold: #b58a47;
-  --rose: #b0645a;
-  --shadow: 0 18px 50px rgba(31, 42, 45, 0.12);
+  --teal: #94ad82;
+  --teal-dark: #596f4f;
+  --mint: #e9efdf;
+  --gold: #d5b65c;
+  --rose: #d88f82;
+  --shadow: 0 18px 46px rgba(52, 61, 54, 0.11);
 }
 
 * {
@@ -26,6 +26,17 @@ body {
   background: var(--paper);
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
   line-height: 1.75;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(148, 173, 130, 0.18), transparent 30%),
+    radial-gradient(circle at 92% 10%, rgba(213, 182, 92, 0.14), transparent 28%),
+    linear-gradient(180deg, #fffdf7 0%, var(--paper) 45%, #f1ecdf 100%);
 }
 
 img {
@@ -46,8 +57,8 @@ a {
   justify-content: space-between;
   gap: 16px;
   padding: 14px clamp(18px, 4vw, 48px);
-  background: rgba(251, 250, 247, 0.92);
-  border-bottom: 1px solid rgba(223, 231, 229, 0.9);
+  background: rgba(247, 244, 236, 0.94);
+  border-bottom: 1px solid rgba(217, 214, 201, 0.9);
   backdrop-filter: blur(14px);
 }
 
@@ -60,14 +71,48 @@ a {
 }
 
 .brand-mark {
-  display: inline-grid;
-  width: 30px;
+  position: relative;
+  display: inline-block;
+  width: 36px;
   height: 30px;
-  place-items: center;
   color: var(--white);
+  background: transparent;
+  border-radius: 0;
+  font-size: 0;
+}
+
+.leaf-mark span {
+  position: absolute;
+  display: block;
+  border-radius: 100% 0 100% 0;
+  transform-origin: 80% 80%;
+}
+
+.leaf-mark span:nth-child(1) {
+  width: 18px;
+  height: 28px;
+  left: 15px;
+  top: 0;
   background: var(--teal);
-  border-radius: 50%;
-  font-size: 15px;
+  transform: rotate(34deg);
+}
+
+.leaf-mark span:nth-child(2) {
+  width: 23px;
+  height: 15px;
+  left: 0;
+  top: 14px;
+  background: #78976b;
+  transform: rotate(22deg);
+}
+
+.leaf-mark span:nth-child(3) {
+  width: 15px;
+  height: 10px;
+  left: 23px;
+  top: 19px;
+  background: var(--gold);
+  transform: rotate(25deg);
 }
 
 .header-nav {
@@ -86,7 +131,7 @@ a {
   min-height: calc(100vh - 58px);
   display: grid;
   align-items: end;
-  padding: clamp(88px, 13vh, 150px) clamp(18px, 5vw, 72px) 48px;
+  padding: clamp(88px, 13vh, 150px) clamp(18px, 5vw, 72px) 54px;
   overflow: hidden;
 }
 
@@ -100,8 +145,8 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(251, 250, 247, 0.95) 0%, rgba(251, 250, 247, 0.82) 41%, rgba(251, 250, 247, 0.25) 100%),
-    linear-gradient(0deg, rgba(251, 250, 247, 0.92) 0%, rgba(251, 250, 247, 0) 34%);
+    linear-gradient(90deg, rgba(247, 244, 236, 0.98) 0%, rgba(247, 244, 236, 0.89) 43%, rgba(247, 244, 236, 0.36) 100%),
+    linear-gradient(0deg, rgba(247, 244, 236, 0.96) 0%, rgba(247, 244, 236, 0) 36%);
 }
 
 .hero-media img {
@@ -136,6 +181,8 @@ h1 {
   font-size: clamp(38px, 7vw, 78px);
   line-height: 1.08;
   letter-spacing: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+  font-weight: 600;
 }
 
 h2 {
@@ -143,6 +190,8 @@ h2 {
   font-size: clamp(26px, 4vw, 44px);
   line-height: 1.22;
   letter-spacing: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+  font-weight: 600;
 }
 
 h3 {
@@ -154,8 +203,15 @@ h3 {
 .hero-lead {
   max-width: 680px;
   margin: 24px 0 0;
-  color: #344549;
+  color: #4d584f;
   font-size: clamp(16px, 2vw, 20px);
+}
+
+.hero-note {
+  max-width: 560px;
+  margin: 18px 0 0;
+  color: var(--teal-dark);
+  font-weight: 700;
 }
 
 .hero-actions,
@@ -174,7 +230,7 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 12px 20px;
-  border: 1px solid var(--teal);
+  border: 1px solid var(--teal-dark);
   border-radius: 8px;
   font: inherit;
   font-weight: 800;
@@ -184,13 +240,13 @@ h3 {
 
 .button.primary {
   color: var(--white);
-  background: var(--teal);
-  box-shadow: 0 12px 24px rgba(45, 119, 114, 0.22);
+  background: var(--teal-dark);
+  box-shadow: 0 12px 24px rgba(89, 111, 79, 0.22);
 }
 
 .button.secondary {
   color: var(--teal-dark);
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.66);
 }
 
 .section {
@@ -210,7 +266,7 @@ h3 {
 }
 
 .intro {
-  background: var(--white);
+  background: rgba(255, 253, 247, 0.78);
 }
 
 .intro-list {
@@ -222,7 +278,7 @@ h3 {
 .intro-list span {
   padding: 10px 14px;
   background: var(--mint);
-  border: 1px solid #c5dfda;
+  border: 1px solid #cbd8bd;
   border-radius: 999px;
   color: var(--teal-dark);
   font-weight: 700;
@@ -244,25 +300,29 @@ h3 {
 }
 
 .question {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   align-items: center;
   margin: 0;
-  padding: 18px;
-  background: var(--white);
+  padding: 20px 18px 18px;
+  background: rgba(255, 253, 247, 0.96);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 8px 26px rgba(31, 42, 45, 0.05);
 }
 
 .question legend {
+  width: 100%;
+  margin-bottom: 10px;
   padding: 0;
   font-weight: 800;
+  float: left;
 }
 
 .question label {
-  min-width: 88px;
+  width: 112px;
+  min-width: 112px;
   min-height: 42px;
   display: inline-flex;
   align-items: center;
@@ -287,7 +347,7 @@ h3 {
 .result-panel {
   margin-top: 34px;
   padding: clamp(24px, 4vw, 36px);
-  background: var(--white);
+  background: #fffdf7;
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
@@ -301,7 +361,7 @@ h3 {
   height: 14px;
   margin: 20px 0;
   overflow: hidden;
-  background: #edf2f1;
+  background: #ece9dc;
   border-radius: 999px;
 }
 
@@ -322,7 +382,7 @@ h3 {
 .advice-item {
   padding: 14px 16px;
   border-left: 4px solid var(--teal);
-  background: #f4f8f7;
+  background: #f4f5ec;
 }
 
 .advice-item strong {
@@ -331,7 +391,7 @@ h3 {
 }
 
 .support {
-  background: #eef5f3;
+  background: #eef1e6;
 }
 
 .support-grid {
@@ -341,7 +401,6 @@ h3 {
 }
 
 .support-grid article,
-.copy-box,
 .contact-panel {
   background: var(--white);
   border: 1px solid var(--line);
@@ -353,33 +412,19 @@ h3 {
 }
 
 .support-grid p,
-.copy-box p,
 .contact-panel p {
   margin: 0;
   color: var(--muted);
 }
 
-.copy-box {
-  padding: 24px;
-}
-
-.copy-box h3 {
-  margin-top: 18px;
-  color: var(--teal-dark);
-}
-
-.copy-box h3:first-child {
-  margin-top: 0;
-}
-
 .contact {
-  background: var(--teal-dark);
+  background: var(--ink);
   color: var(--white);
 }
 
 .contact .eyebrow,
 .contact-panel p {
-  color: #d9eeea;
+  color: #edf1e7;
 }
 
 .contact-panel {
@@ -409,7 +454,7 @@ h3 {
   padding: 28px 18px;
   color: var(--muted);
   text-align: center;
-  background: var(--white);
+  background: #fffdf7;
   border-top: 1px solid var(--line);
 }
 
@@ -434,7 +479,7 @@ h3 {
 
   .hero-media::after {
     background:
-      linear-gradient(0deg, rgba(251, 250, 247, 0.96) 0%, rgba(251, 250, 247, 0.72) 58%, rgba(251, 250, 247, 0.46) 100%);
+      linear-gradient(0deg, rgba(247, 244, 236, 0.96) 0%, rgba(247, 244, 236, 0.78) 58%, rgba(247, 244, 236, 0.5) 100%);
   }
 
   .two-column,
@@ -443,11 +488,11 @@ h3 {
   }
 
   .question {
-    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .question legend {
-    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .support-grid {
@@ -477,10 +522,12 @@ h3 {
   }
 
   .question {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
   .question label {
+    width: 100%;
     justify-content: flex-start;
   }
 

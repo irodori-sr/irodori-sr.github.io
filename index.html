@@ -14,7 +14,9 @@
 <body>
   <header class="site-header" aria-label="サイト上部">
     <a class="brand" href="#top" aria-label="障害福祉事業所 運営健康診断 トップへ">
-      <span class="brand-mark" aria-hidden="true">✓</span>
+      <span class="brand-mark leaf-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
       <span>運営健康診断</span>
     </a>
     <nav class="header-nav" aria-label="ページ内メニュー">
@@ -30,7 +32,7 @@
         <img src="assets/hero-operations-check.png" alt="">
       </div>
       <div class="hero-content">
-        <p class="eyebrow">無料・約3分・スマホ対応</p>
+        <p class="eyebrow">障害福祉事業所向け 無料チェック</p>
         <h1>社長が安心して、利用者支援に集中できる事業所へ。</h1>
         <p class="hero-lead">
           処遇改善加算、給与計算、社会保険、労務管理、助成金。
@@ -40,6 +42,7 @@
           <a class="button primary" href="#check">診断をはじめる</a>
           <a class="button secondary" href="#support">確認できる内容を見る</a>
         </div>
+        <p class="hero-note">診断ページを使わず、空メールやお電話でのご相談でも構いません。</p>
       </div>
     </section>
 
@@ -66,67 +69,67 @@
       <div class="section-inner">
         <div class="section-heading">
           <p class="eyebrow">10問診断</p>
-          <h2>あなたの事業所は大丈夫ですか？</h2>
-          <p>「はい」が多いほど安心です。迷う項目は「いいえ」で確認してみてください。</p>
+          <h2>その運用、正しくできていますか？</h2>
+          <p>「なんとなく大丈夫」ではなく、法律・加算要件・実地指導に耐えられる状態かを確認してみてください。</p>
         </div>
 
         <form class="diagnosis" id="diagnosisForm">
-          <fieldset class="question" data-category="処遇改善加算" data-advice="処遇改善加算の分配根拠、職員への説明資料、実績報告まで一連で確認しておくと安心です。">
-            <legend>処遇改善加算の分配方法を、職員や第三者に説明できますか？</legend>
+          <fieldset class="question" data-category="処遇改善加算" data-advice="処遇改善加算は、分配根拠、職員への周知、賃金改善実績、届出内容の整合性を一連で確認しておく必要があります。">
+            <legend>処遇改善加算の配分方法は、要件に沿って正しく運用できていますか？</legend>
             <label><input type="radio" name="q1" value="yes" required> はい</label>
             <label><input type="radio" name="q1" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="給与計算" data-advice="給与計算は締め日、控除、残業、加算配分の確認者を分けるとミスを減らせます。">
-            <legend>給与計算は毎月ダブルチェックしていますか？</legend>
+          <fieldset class="question" data-category="給与計算" data-advice="給与計算は、最低賃金、割増賃金、控除、処遇改善分の反映にズレがないかを確認することが重要です。">
+            <legend>給与計算は、残業代・控除・処遇改善分まで法的に問題ない形で計算できていますか？</legend>
             <label><input type="radio" name="q2" value="yes" required> はい</label>
             <label><input type="radio" name="q2" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="勤怠管理" data-advice="手作業の勤怠集計は残業代や有休管理のズレにつながりやすいため、集計方法の見直しが有効です。">
-            <legend>勤怠集計や残業時間を毎月確認できていますか？</legend>
+          <fieldset class="question" data-category="勤怠管理" data-advice="勤怠記録は、労働時間、休憩、残業、有休取得の根拠になります。実態と記録がズレていないか点検が必要です。">
+            <legend>勤怠記録は、実際の勤務時間とズレなく、労基署に確認されても説明できる状態ですか？</legend>
             <label><input type="radio" name="q3" value="yes" required> はい</label>
             <label><input type="radio" name="q3" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="社会保険手続き" data-advice="入退社、扶養、月額変更、算定基礎などの期限管理を見える化しておくと手続き漏れを防げます。">
-            <legend>入退社や扶養変更など、社会保険手続きの期限管理はできていますか？</legend>
+          <fieldset class="question" data-category="社会保険手続き" data-advice="入退社、扶養、月額変更、算定基礎などは期限や判断を誤ると、後から保険料や手続きの修正が必要になることがあります。">
+            <legend>社会保険・雇用保険の加入、喪失、変更手続きは、期限内に正しく行えていますか？</legend>
             <label><input type="radio" name="q4" value="yes" required> はい</label>
             <label><input type="radio" name="q4" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="就業規則・雇用契約" data-advice="就業規則、雇用契約書、賃金規程が実際の勤務形態と合っているか定期的な点検が必要です。">
-            <legend>就業規則や雇用契約書を、直近の運用に合わせて見直していますか？</legend>
+          <fieldset class="question" data-category="就業規則・雇用契約" data-advice="就業規則、雇用契約書、賃金規程が実際の勤務形態や給与運用と合っていないと、職員対応や監査時のリスクになります。">
+            <legend>就業規則・雇用契約書・賃金規程は、実際の運用と矛盾していませんか？</legend>
             <label><input type="radio" name="q5" value="yes" required> はい</label>
             <label><input type="radio" name="q5" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="労務相談" data-advice="職員対応は初動が大切です。相談先と記録方法を決めておくと、トラブル化を防ぎやすくなります。">
-            <legend>職員対応や労務トラブルを相談できる相手が決まっていますか？</legend>
+          <fieldset class="question" data-category="労務相談" data-advice="注意指導、退職、休職、ハラスメント対応は初動と記録が重要です。感覚的な対応だけで進めない体制が必要です。">
+            <legend>職員対応や労務トラブルは、法的に問題が出にくい手順で対応できていますか？</legend>
             <label><input type="radio" name="q6" value="yes" required> はい</label>
             <label><input type="radio" name="q6" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="助成金" data-advice="採用、定着、研修、処遇改善に関係する助成金は、要件に合うかだけでも先に確認しておく価値があります。">
-            <legend>使えそうな助成金を定期的に確認していますか？</legend>
+          <fieldset class="question" data-category="助成金" data-advice="助成金は、申請前の労務管理や帳簿、就業規則、賃金台帳の状態が要件に影響することがあります。">
+            <legend>助成金を申請できるだけの労務書類・勤怠・賃金台帳の整備はできていますか？</legend>
             <label><input type="radio" name="q7" value="yes" required> はい</label>
             <label><input type="radio" name="q7" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="実地指導・監査準備" data-advice="実地指導や監査に備えて、労務書類、給与資料、加算資料の保管場所と更新担当を決めておきましょう。">
-            <legend>実地指導や監査で必要になりそうな労務書類を整理できていますか？</legend>
+          <fieldset class="question" data-category="実地指導・監査準備" data-advice="実地指導や監査では、加算資料、雇用契約、勤怠、給与資料、職員配置の根拠を求められることがあります。">
+            <legend>実地指導や監査で、加算・人員配置・労務書類の根拠をすぐ示せますか？</legend>
             <label><input type="radio" name="q8" value="yes" required> はい</label>
             <label><input type="radio" name="q8" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="指定申請・変更届" data-advice="指定申請や変更届は行政書士との連携が有効です。人員配置や運営体制の変更時に早めの確認が必要です。">
-            <legend>指定申請や変更届が必要な場面で、行政書士などの相談先がありますか？</legend>
+          <fieldset class="question" data-category="指定申請・変更届" data-advice="指定申請や変更届は、事業内容、人員配置、管理者・サービス管理責任者の変更などで必要になる場合があります。">
+            <legend>人員配置や運営体制の変更時に、指定基準や変更届の要否を確認できていますか？</legend>
             <label><input type="radio" name="q9" value="yes" required> はい</label>
             <label><input type="radio" name="q9" value="no"> いいえ</label>
           </fieldset>
 
-          <fieldset class="question" data-category="外部専門家との連携" data-advice="社労士、行政書士、弁護士の役割を整理しておくと、労務・指定・法務の相談がスムーズになります。">
-            <legend>社労士、行政書士、弁護士と必要に応じて連携できる体制がありますか？</legend>
+          <fieldset class="question" data-category="外部専門家との連携" data-advice="労務は社労士、指定申請は行政書士、法的紛争は弁護士など、相談先を分けておくと判断が遅れにくくなります。">
+            <legend>労務・指定申請・法務の問題を、内容に応じて専門家へ正しく相談できる体制がありますか？</legend>
             <label><input type="radio" name="q10" value="yes" required> はい</label>
             <label><input type="radio" name="q10" value="no"> いいえ</label>
           </fieldset>
@@ -153,8 +156,9 @@
     <section class="section support" id="support">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="eyebrow">お手伝いできること</p>
-          <h2>事業所運営の「気になる」を、必要な専門家につなぎます。</h2>
+          <p class="eyebrow">社内で抱えにくい業務を外へ</p>
+          <h2>事業所運営の「気になる」を、いろどり社労士オフィスが支えます。</h2>
+          <p>給与や処遇改善の細かな運用は、職員に任せづらく、代表者だけで抱えるには重い領域です。必要な部分だけ外部に預ける選択肢があります。</p>
         </div>
         <div class="support-grid">
           <article>
@@ -171,7 +175,7 @@
           </article>
           <article>
             <h3>助成金・専門家連携</h3>
-            <p>助成金の確認、指定申請の行政書士連携、法務相談の弁護士連携まで支えます。</p>
+            <p>助成金の確認、指定申請・変更届の相談、必要に応じた専門家連携まで支えます。</p>
           </article>
         </div>
       </div>
@@ -180,23 +184,24 @@
     <section class="section contact" id="contact">
       <div class="section-inner contact-panel">
         <div>
-          <p class="eyebrow">無料相談</p>
-          <h2>「これ相談していいのかな？」という内容からどうぞ。</h2>
+          <p class="eyebrow">相談窓口</p>
+          <h2>診断しなくても大丈夫です。空メールからでもご相談ください。</h2>
           <p>
-            診断結果で気になる項目があれば、まずは状況の整理からご相談ください。
-            必要に応じて、行政書士・弁護士とも連携してサポートします。
+            給与計算、処遇改善加算、労務管理、指定申請まわりなど、
+            「何から相談すればいいか分からない」という段階でも構いません。
+            いろどり社労士オフィスが、状況整理からサポートします。
           </p>
         </div>
         <div class="contact-actions">
           <a class="button primary" id="mailLink" href="mailto:tsuchida.sr.202011@gmail.com?subject=%E9%81%8B%E5%96%B6%E5%81%A5%E5%BA%B7%E8%A8%BA%E6%96%AD%E3%81%AE%E7%9B%B8%E8%AB%87&body=%E4%BA%8B%E6%A5%AD%E6%89%80%E5%90%8D%EF%BC%9A%0A%E3%81%94%E6%8B%85%E5%BD%93%E8%80%85%E5%90%8D%EF%BC%9A%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%EF%BC%9A%0A%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84%E5%86%85%E5%AE%B9%EF%BC%9A%0A">メールで相談する</a>
-          <p class="contact-note">公開前に、リンク先メールアドレスを設定してください。</p>
+          <p class="contact-note">メール：tsuchida.sr.202011@gmail.com</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>supported by つちだ社会保険労務士事務所</p>
+    <p>supported by いろどり社労士オフィス</p>
   </footer>
 
   <script src="app.js"></script>
