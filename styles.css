@@ -172,7 +172,11 @@ h1,
 h2,
 h3,
 p {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+}
+
+.keep {
+  display: inline-block;
 }
 
 h1 {
@@ -525,6 +529,10 @@ h3 {
   h1 {
     font-size: clamp(36px, 11vw, 44px);
     line-height: 1.2;
+  }
+
+  .keep {
+    display: inline;
   }
 
   .question {
